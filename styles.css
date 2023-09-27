@@ -1,0 +1,28 @@
+/* styles.css */
+
+/*väripaletti */
+/*tumma oranssi*/
+.color1 {
+    color: #f15d27;}
+/*oranssi */
+.color2 {
+    color: #af5f0c;}
+/*vaalea oranssi */
+.color3 {
+    color: #d69f4a;}
+/*keltainen*/
+.color4 {
+    color: #f5e191;}
+/*vaalea keltainen*/
+.color5 {
+    color: #f8efc5;}
+
+.index-bg {
+    background-color: #f8efc5; /*vaalea keltainen*/
+}
+.harjoitus-bg {
+    background-color: #f5e191; /*keltainen*/
+}
+.projekti-bg {
+    background-color: #d69f4a; /*vaalea oranssi*/
+}
