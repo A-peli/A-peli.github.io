@@ -20,3 +20,12 @@ max-width: 100%;}
 	background-color: sandybrown; 
 	border: 5px solid black;
 }
+.imgtxt {
+	text-align: center;
+	width: 800px;
+	background-color: beige;
+}
+.imgtxt img {
+	display: block;
+	margin: 0 auto;
+}
