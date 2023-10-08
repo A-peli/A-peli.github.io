@@ -2,15 +2,39 @@ img { width: 800px;
 max-width: 100%; }
 
 body {
-	background-color: burlywood;}
-body {
+	background-color: burlywood;
+	margin-left: 30px;
 	font-family: "Trebuchet MS";
 }
-div { width: 800px;
-max-width: 100%;}
+figure {
+	display: block;
+	margin: 0 auto;
 
-.fancy {
-	color:black;
+}
+
+div { 
+	width: 800px;
+	max-width: 100%;
+}
+
+header {
+	text-align: center;
+	background-color: sandybrown; 
+	border: 3px solid black;
+	width: 800px;
+	max-width: 100%;
+}
+
+footer {
+	background-color: sandybrown;
+	border: 5px solid black;
+	width: 800px;
+	max-width: 100%;
+}
+
+aside {
+	width: 800px;
+	max-width: 100%;
 }
 
 .linkki {
@@ -20,12 +44,16 @@ max-width: 100%;}
 	background-color: sandybrown; 
 	border: 5px solid black;
 }
-.imgtxt {
+figcaption {
 	text-align: center;
 	width: 800px;
 	background-color: beige;
+	font-style: italic;
 }
-.imgtxt img {
-	display: block;
-	margin: 0 auto;
+.fancy { 
+	width: 800px;
+	max-width: 100%;
+	text-align: left;
+	margin-left: 0px;
+	
 }
