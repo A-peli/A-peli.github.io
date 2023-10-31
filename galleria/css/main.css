@@ -152,10 +152,10 @@ header h1 {
     clear: both;
 }
 
-.clearfix {
+/* .clearfix {
     *zoom: 1;
 }
-
+*/
 /* ==========================================================================
    Print styles
    ========================================================================== */
@@ -246,7 +246,7 @@ figure {
     margin: 15px;
 }
 ul {
-    position: ;
+
     display: flex;
     flex-wrap: wrap;
     padding-left: 0px;
