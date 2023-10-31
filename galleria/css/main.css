@@ -219,3 +219,63 @@ header h1 {
         page-break-after: avoid;
     }
 }
+
+body{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+header {
+   width: 100%;
+
+}
+main {
+    width: 85%;
+
+}
+figcaption {
+    position: absolute;
+    top: 0;
+    color: white;
+    background-color:rgba(0,0,0,0.5);
+    width: 100%;
+}
+figure {
+    position: relative;
+    margin: 15px;
+}
+ul {
+    position: ;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0px;
+    justify-content: space-evenly;
+}
+
+aside{  
+    width: 15%;
+    position: relative;
+}
+aside p {
+    padding-left: 15px;
+}
+h3 {
+margin: 5px 10px;
+
+}
+li {
+    list-style-type: none;
+    padding-left: 0;
+}
+@media (max-width: 700px) {
+    main {
+        width: 100%;
+    }
+    
+    aside {
+        flex: auto;
+        
+    }
+    
+      }
