@@ -268,7 +268,7 @@ li {
     list-style-type: none;
     padding-left: 0;
 }
-@media (max-width: 700px) {
+@media (max-width: 750px) {
     main {
         width: 100%;
     }
