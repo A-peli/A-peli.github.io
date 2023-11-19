@@ -1,0 +1,404 @@
+
+
+
+ /*----------------------------*/
+ /*                            */
+ /*  EDIT THIS FILE TO APPLY   */
+ /*  YOUR DESIRED STYLE!       */
+ /*                            */
+ /*----------------------------*/
+
+
+
+/*--------- BACKGROUND ---------------------*/
+
+html { 
+	/*koko sivun tausta on valkoinen.
+	Muuta haluamaksesi*/
+	background:#3D3D3D;
+
+	/*Jos määrität html-tagissa fontteja, 
+	taustavärejä tai tekstin värejä,
+	samat määritykset tulevat kaikkiin sisällä oleviin
+	elementteihin. Näin voit määrittää esim. koko sivun 
+	fontit, värit ym. ja sitten muuttaa haluamissasi
+	elementeissä tyylin toiseksi.*/
+
+}
+
+
+body { 
+	/*Kaiken sisällön ympärillä on body. 
+	Voit muuttaa myös bodyn taustaväriä tai
+	esim. lisätä paddingin, jotta elementit eivät 
+	olisi reunassa kiinni.*/
+	
+	/*Tällä koodilla voit tehdä niin, että yli 900px
+	leveässä näytössä body-tagi jää vain 900px leveäksi,
+	ja reunoille jää tyhjää. Voit muuttaa tätä miten haluat.*/
+
+	margin:auto; /*tämä keskittää body-tagin sivusuunnassa*/
+	font-family: 'Hind', sans-serif;
+	display: flex;
+
+
+	
+}
+
+/*--------- HEADER ---------------------*/
+header {
+	position: fixed;
+	left: 0%;
+	height: 100%;
+	width: 40%;
+	background-image: url(trees.jpeg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	box-shadow: inset 0 0 0 2000px rgba(61, 61, 61, 0.7); /*overlay kuvan päällä, joka tuo kontrastia*/
+	
+}
+nav {
+	position: fixed;
+	top: 30%;
+	width: 100%;
+
+	
+	
+
+
+}
+
+/*Header text on top of the menu*/
+header h1 { 
+	/*Pääotsikko*/
+
+	/*Täällä kannattaa muokata background-, color- 
+	font-size- ja font-family-arvoja.*/
+
+	/*Laita myös ja marginaalit paddingit paremmin, 
+	niin näyttää tyylikkäämmältä */
+
+	/*Voit halutessasi myös esim. keskittää otsikon (text-align: center;)*/
+	font-family: 'Montserrat', sans-serif;
+	font-size: 4em;
+	width: 375px;
+	text-align: left;
+	color:#F0F7F4;
+	padding: 15px;
+	margin-left: 5px;
+	border-left: solid;
+	border-width: 10px;
+	border-color: #AF3800;
+	/* background-color: red; */ /* <--for test purposes */
+	
+
+}
+
+/*--------- MAIN MENU ---------------------*/
+
+/*Menu*/
+#main-menu { 
+	list-style-type: none; 
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
+	/* background-color: red; */ /*<-for test purposes*/
+	position: absolute;
+	width: 35%;
+
+	/*Voit tehdä tästä flexboxin, 
+	niin valikon napit menevät vierekkäin*/
+
+	/*Laita tässä ja marginaalit paddingit paremmin, 
+	niin näyttää tyylikkäämmältä */
+	
+	/*Voi muokata täällä myös background-, color-arvoja.*/
+		
+}
+/*Menu item*/
+#main-menu li {
+	/*Laita tässä ja marginaalit paddingit paremmin, 
+	niin näyttää tyylikkäämmältä */
+	
+	/*Voi muokata täällä myös background-, color-arvoja.*/
+	
+	margin-top: 15px;
+	margin-bottom: 15px;
+	text-align: right;
+	
+}
+
+/*Link in menu item*/
+#main-menu a { 
+
+	text-decoration: none; /*poistaa linkin alleviivauksen*/
+	font-size: 2.5em;
+	color: #F0F7F4;
+	padding: 10px;
+	border-right: solid;
+	border-color:transparent;
+	border-width: 5px;
+	
+	
+	/*Voi muokata täällä myös background-, color- 
+	font-size- ja font-family-arvoja.*/
+
+}
+
+/*Menu item when mouse over*/
+#main-menu a:hover { 
+	
+	/*Tässä määritellään, miltä valikon linkki näyttää, 
+	kun kursori on sen päällä. Muuta paremmaksi */
+/* 	color:#AF3800; 
+	background: #3D3D3D;
+	border-radius: 25px; */
+	border-right: solid;
+	border-color: #AF3800;
+	border-width: 5px;
+
+}
+
+/*------- ARTICLE BUTTONS -------------------*/
+/*Button in end of each article*/
+.button { 
+	/*saatat haluta tehdä napista aika samanlaisen
+	kuin valikkolinkit, mutta toisenlainenkin 
+	voi olla ihan tyylikäs*/
+
+	/*Voi muokata täällä myös background-, color- 
+	font-size- ja font-family-arvoja.*/
+	
+	/*Tämä on a-elementti, ja se on oletuksena 
+		display: inline; 
+	Siksi sen kokoa tai paikkaa ym. ei voi muuttaa.
+	Jotta nappia on helpompi käsitellä, voi muuttaa sen 
+		display: block;
+		
+	Ymmärtääksesi paremmin mitä on block ja inline ym., 
+	katso tämä video: https://www.youtube.com/watch?v=9T8uxp5hQ60	
+	*/
+
+	/*Tällä koodilla saat fancyn varjon :) 
+		box-shadow: 0px 2px 10px rgba(0,0,0,50%); 
+	*/
+	display: block;
+	border-radius: 2px;
+	background-color: #AF3800;
+	padding: 10px;
+	color: #F0F7F4;
+	font-size: 1em;
+	border-left: solid;
+	border-color: transparent;
+	position: relative;
+	bottom: 0px;
+	
+
+}	
+
+/*Button when mouse over*/
+.button:hover { 
+	/*Tässä määritellään, nappi näyttää, 
+	kun kursori on sen päällä. Muuta paremmaksi */
+	border-radius: 2px;
+	padding: 10px;
+	color: #AF3800;
+	font-size: 1em;
+	border-left: solid;
+	background-color: rgba(61, 61, 61, 0.2)
+	
+	/*Voit halutessasi laittaa vaikka koko 
+	artikkelin muuttumaan jotenkin hiukan, 
+	kun sen päällä on kursori.. :) */
+}
+
+
+/*--------- ARTICLES ---------------------*/
+
+/*Artikkeleiden ympärillä*/
+main {
+	/*Kaikki "artikkelit" ovat main-tagin sisällä.
+	Jos pidät tämän flexboxina, artikkelit menevät
+	vierekkäin leveässä näytössä. 
+	ja sitten artikkeleihin (ks. alla) esim. ,
+	jolloin artikkelit asettuvat vierekkäin.*/
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content:space-around;
+	width: auto;
+	position: absolute;
+	left: 40%;
+	background-color:#3D3D3D;
+	/* background-color: red; */
+	color:#3D3D3D;
+
+	
+}
+
+/*Frame of each "article"*/
+article {
+	/*max-width: 300px; Jos main on flexbox, 
+	tämä tekee sen, että "artikkelit" mahtuvat vierekkäin.*/
+	
+	/*Yksittäisen artikkelin tausta:
+	Saatat haluta  muokata täällä background-, color- 
+	sekä font-size- ja font-family-arvoja.*/
+
+	/*Tärkeää: Laita tässä marginaalit ja paddingit paremmin, 
+	niin näyttää tyylikkäämmältä! Teksti, kuva ym. ei saa olla 
+	reunaan asti, vaan reunassa pitää olla marginaali (teknisesti
+	margin tai padding).*/
+flex-grow: 0;
+width: 300px;
+height: 100%;
+margin: 20px;
+padding: 40px;
+background-color:#F0F7F4;
+border-radius: 25px;
+
+
+}
+
+
+
+/*article title*/
+article h2 { 
+
+	/*Yksittäisen artikkelin otsikko*/
+
+	/*Kannattaa muokata täällä background-, color- 
+	font-size- ja font-family-arvoja.*/
+
+	/*Saatat haluta muokata täällä myös 
+	background-, color-, margin- ja padding-
+	font-size- ja font-family-arvoja.*/
+	font-family: 'Montserrat', sans-serif;
+	font-size: 2em;
+	padding-bottom: 0px;
+	margin-bottom: 5px;
+	width: 100%;
+}
+
+/*article text*/
+article p { 
+	/*Artikkelin pienempi teksti*/
+
+	/*Saatat haluta muokata täällä 
+	background-, color-, margin- ja padding-
+	font-size- ja font-family-arvoja.*/
+	font-size: 1.5em;
+	width: 100%;
+
+	
+}
+
+/* "Images" */
+.article-image { 
+    max-width: auto; /*Tämä tekee sen, että kuva ei mene yli reunasta.*/
+	width: 100%;
+	border-radius: 15px;
+	
+	
+	/*Kuva voi olla koko artikkelin levyinen tai pienempi. 
+	Esim. alla olevalla kuvasta tulisi pienempi (=50%)
+	ja teksti kiertää kuvaa (=float):
+	
+		width: 50%;
+		min-width: 150px;
+		float: left; 
+	*/
+}
+
+/*-------- FOOTER ---------------*/
+
+footer {
+	/*Kannattaa laittaa footeriin vähintään padding 
+	ja ehkä eri taustaväri, jotta se erottuu hiukan.*/
+	position:fixed;
+	bottom: 0;
+	left: 0%;
+	padding-left: 5px;
+	padding-top: 5px;
+	padding-right: 3px;
+	padding-bottom: 5px;
+	background-color: gray;
+	opacity: 0.8;
+	border-radius: 15px;
+	text-align: center;
+	justify-content: center;
+}
+
+@media only screen and (max-width: 1100px) {
+	header {
+		width: 100%;
+		position: relative;
+		background-image: url(trees.jpeg);
+		background-size:cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		box-shadow: inset 0 0 0 2000px rgba(61, 61, 61, 0.7); /*overlay kuvan päällä, joka tuo kontrastia*/
+		max-height: 300px;
+		padding-top: 0%;
+
+	}
+
+	main {
+		width: 100%;
+		position: relative;
+		left: 0%;
+
+	}
+	nav {
+		position: relative;
+		width: 100%;
+		top: 0%;
+		padding: 0px;
+		
+	}
+	#main-menu {
+		display: flex;
+		width: 100%;
+		position: relative;
+		padding: 0px;
+		justify-content:space-evenly;
+
+
+	}
+	#main-menu li {
+		margin-top: 15px;
+		margin-bottom: 15px;
+		text-align: left;
+		font-size: 1em;
+		padding: 5px;
+
+		
+	}
+	#main-menu a { 
+
+		text-decoration: none; /*poistaa linkin alleviivauksen*/
+		font-size: 1.5em;
+		padding: 10px;
+		border-bottom: transparent;
+		border-right:transparent;
+		border-width: 5px;
+	}
+	#main-menu a:hover {
+		border-bottom: solid;
+		border-color: #AF3800;
+		border-width: 5px;
+		border-right: transparent;
+
+	}
+}
+@media only screen and (max-width: 750px) {
+	#main-menu a { 
+
+		text-decoration: none; /*poistaa linkin alleviivauksen*/
+		font-size: 1em;
+		padding: 5px;
+		border-bottom: transparent;
+		border-right:transparent;
+		border-width: 5px;
+	}
+}
