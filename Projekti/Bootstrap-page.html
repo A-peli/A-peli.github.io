@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aapelin Bootstrap-sivu</title>
+    <!-- tyylitiedosto ja fontit -->
+    <link rel="stylesheet" href="css/tyylit.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap" rel="stylesheet">
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body class="min-vh-100"> 
+        <!-- Header, valikko -->
+        <header class=" col-12 header p-4 position-relative start-0 top-0 end-0" style="background-color: #111617"> <!-- 12 wide section -->
+            <div class="d-flex align-items-center justify-content-between">
+                <!-- title -->
+                <a href="/" class="text-decoration-none text-secondary fs-4"> Aapelin Bootstrap-sivu (ppst! Linkit eivät sitten toimi koko sivustolla!)</a>
+                <!-- valikkonappi -->
+                <div>
+                    <!-- MENUNAPPI + MENUIKONI -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" 
+                aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="#FF8133" class="MenuIcon" viewBox="0 0 16 16" width="32" height="32"><path d="M1 2.75A.75.75 0 0 1 1.75 2h12.5a.75.75 0 0 1 0 1.5H1.75A.75.75 0 0 1 1 2.75Zm0 5A.75.75 0 0 1 1.75 7h12.5a.75.75 0 0 1 0 1.5H1.75A.75.75 0 0 1 1 7.75ZM1.75 12h12.5a.75.75 0 0 1 0 1.5H1.75a.75.75 0 0 1 0-1.5Z"></path></svg>
+                </button> 
+                </div>
+            </div>
+        </header>
+    <!-- end of header, start of navbar -->
+    <nav class="collapse navbar-collapse dropdown-nav" id="navbar">
+        <div class="dropdown-nav__container container-fluid">
+            <div class="row align-items-start">
+                <!-- pienellä näytöllä vie kaikki bootstrapin 12 kolumnia, vähän isomman kokoisella vie 4 kolumnia per kuva -->
+                <!-- 1. menu item -->
+                <div class="col-12 col-sm-4 mt-4">
+                    <a href="#" class="row text-decoration-none">
+                        <div class="col-2 col-sm-12 mb-4 pt-5">
+                        <img src="/img/1-projekti.png" alt="Verkkosivuprojektin sivut" class="img-fluid" width="1080" height="1080" loading="lazy">
+                        </div>
+                        <div class="col-10">
+                            <h3>Projektin muut sivut löydät täältä</h3>
+                            <p>Katso lisää <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="#FF8133" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"/>
+                            </svg></p>
+                        </div>
+                    </a>
+                </div>
+            <!-- 2. menu item -->
+                <div class="col-12 col-sm-4 mt-4">
+                    <a href="#" class="row text-decoration-none">
+                        <div class="col-2 col-sm-12 mb-4 pt-5">
+                        <img src="/img/2-muut.png" alt="Muut Verkkosivujen kehittäminen -kurssin tehtävät" class="img-fluid" width="1080" height="1080" loading="lazy">
+                        </div>
+                        <div class="col-10">
+                            <h3>Aapelin GitHub -palautussivulle</h3>
+                            <p>Klikkaa tästä <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="#FF8133" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"/>
+                            </svg></p>
+                        </div>
+                    </a>
+                </div>
+                <!-- 3. menu item -->
+                <div class="col-12 col-sm-4 mt-4">
+                    <a href="#" class="row text-decoration-none">
+                        <div class="col-2 col-sm-12 mb-4 pt-5">
+                        <img src="/img/3-resources.png" alt="Tähän tehtävään käytetyt resurssit" class="img-fluid" width="1080" height="1080" loading="lazy">
+                        </div>
+                        <div class="col-10">
+                            <h3>Mistä kaikkialta hain tietoa tätä tehtävää varten?</h3>
+                            <p>Klikkaa tästä <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="#FF8133" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"/>
+                            </svg></p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+    <!-- MENUN SULKUNAPPI + IKONI -->
+            <button class="navbar-toggler dropdown-nav__CloseNavBtn" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" 
+                aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <!-- ÄKSÄ IKONI -->
+                <svg xmlns="http://www.w3.org/2000/svg" fill="#FF8133" width="52" height="52" class="bi bi-x" viewBox="0 0 16 16">
+                    <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+                </svg>
+            </button>
+        </div>
+    </nav>
+    <!-- end of NAV -->
+    <!-- start of main -->
+    <main class="container mt-3">
+    <div class="row mb-2"> <!-- 2x 6 wide sections-->
+        <div class="col-md-6"> <!-- 1. kortti -->
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-sm-300 h-md-300 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-primary">Aapeli Huhtinen</strong>
+              <h3 class="mb-0">Aapeli Huhtisen CV</h3>
+              <div class="mb-auto text-muted">12. marraskuuta 2023</div>
+              <p class="card-text mb-auto">26-vuotias IT-tradenomiopiskelija. Aapelilla on kokemusta IT-alan lisäksi sekä kaupan-, että turvallisuusaloilta</p>
+              <a href="#" class="stretched-link">Paina tästä</a>
+            </div>
+            <div class="col-auto d-none d-lg-block"> <!-- "kuva" katoaa pienellä ruudulla, ja latautuu isolla -->
+              <img src="/img/5-resume.png" alt="Aapelin CV" class="img-fluid" width="200" height="300" >
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6"> <!-- 2. kortti -->
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-1 shadow-sm h-sm-300 h-md-300 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-secondary">Aapeli Huhtinen</strong>
+              <h3 class="mb-0">Kurssin tehtävät</h3>
+              <div class="mb-auto text-muted">3. joulukuuta 2023</div>
+              <p class="mb-auto">Nämä sivut ovat luotu osana Verkkosivujen kehittäminen -opintojaksoa. Tässä linkki Aapelin tehtävien palautussivulle</p>
+              <a href="#" class="stretched-link">Paina tästä</a>
+            </div>
+            <div class="col-auto d-none d-lg-block"> <!-- "kuva" katoaa pienellä ruudulla, ja latautuu isolla -->
+                <img src="/img/5-resume.png" alt="Aapelin CV" class="img-fluid" width="200" height="300" >
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="featurette-divider">
+
+      <div class="row featurette mt-4 mb-4"> <!-- 1x 4columns and 1x 8 columns -->
+        <div class="col-md-8 order-md-2">
+          <h2 class="featurette-heading mt-6">Tällä sivulla on hyödynnetty Bootstrappia. <span class="text-muted">Katso vaikka itse!</span></h2>
+          <p class="lead">Header on 12 kolumnin levyinen, yllä olevat kortit ovat molemmat kuuden levyisiä. Tämä rivi on jaettu kahteen erikokoiseen osioon. Kuva vie neljä kolumnia ja tämä teksti kahdeksan! Alla on Footer, jossa on neljä kappaletta kolme kolumnia vieviä elementtejä. </p>
+        </div>
+        <div class="col-md-4 order-md-1">
+            <img src="/img/6-bootstrap.jpg" alt="Bootstrap code" class="img-fluid" width="500" height="500" >
+
+  
+        </div>
+      </div>
+    </main>
+    <footer class="footer p-4 position-relative bottom-0 text-secondary" style="background-color: #111617;">
+        <div class="row text-center p-2">   <!-- 4x 3 wide -->
+            <div class="col-3 p-3"> 
+                <h4>Sivun tehnyt Aapeli Huhtinen</h4>
+                <p>Vähän vielä kesken</p>
+            </div>
+            <div class="col-3 p-3"> 
+                <h4>Laurea-ammattikorkeakoulu</h4>
+                <p class="fs-5">Verkkosivujen kehittäminen</p>
+            </div>
+            <div class="col-3 p-3"> 
+                <h4>Tähän voisi laittaa vaikka sopivia linkkejä</h4>
+                <ul class="list-unstyled">
+                    <li>Link 1</li>
+                    <li>Link 2</li>
+                    <li>Link 3</li>
+                </ul>
+            </div>
+            <div class="col-3 p-3"> 
+                <h4>Tähän toisenlaisia linkkejä?</h4>
+                <ul class="list-unstyled">
+                    <li>Link 1</li>
+                    <li>Link 2</li>
+                    <li>Link 3</li>
+                </ul>
+            
+            </div>
+        </div> 
+    </footer>
+    <!-- bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
