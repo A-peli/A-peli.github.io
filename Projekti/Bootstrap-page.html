@@ -13,12 +13,12 @@
     <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
-<body class="min-vh-100"> 
+<body class="min-vh-100 d-flex flex-column"> 
         <!-- Header, valikko -->
-        <header class=" col-12 header p-4 position-relative start-0 top-0 end-0" style="background-color: #111617"> <!-- 12 wide section -->
+        <header class="col-12 header p-4 position-relative start-0 top-0 end-0" style="background-color: #111617"> <!-- 12 wide section -->
             <div class="d-flex align-items-center justify-content-between">
                 <!-- title -->
-                <a href="/" class="text-decoration-none text-secondary fs-4"> Aapelin Bootstrap-sivu (ppst! Linkit eivät sitten toimi koko sivustolla!)</a>
+                <a href="/" class="text-decoration-none text-secondary fs-4"> <img src="img/6-logo.png" class="img-fluid" width="200" alt="Aapelin logo"></a>
                 <!-- valikkonappi -->
                 <div>
                     <!-- MENUNAPPI + MENUIKONI -->
@@ -89,7 +89,8 @@
     </nav>
     <!-- end of NAV -->
     <!-- start of main -->
-    <main class="container mt-3">
+    <main class="container mt-4 mb-4
+    ">
     <div class="row mb-2"> <!-- 2x 6 wide sections-->
         <div class="col-md-6"> <!-- 1. kortti -->
           <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-sm-300 h-md-300 position-relative">
@@ -122,45 +123,100 @@
       </div>
       <hr class="featurette-divider">
 
-      <div class="row featurette mt-4 mb-4"> <!-- 1x 4columns and 1x 8 columns -->
+      <div class="row featurette m-4 mb-4"> <!-- 1x 4columns and 1x 8 columns -->
         <div class="col-md-8 order-md-2">
           <h2 class="featurette-heading mt-6">Tällä sivulla on hyödynnetty Bootstrappia. <span class="text-muted">Katso vaikka itse!</span></h2>
           <p class="lead">Header on 12 kolumnin levyinen, yllä olevat kortit ovat molemmat kuuden levyisiä. Tämä rivi on jaettu kahteen erikokoiseen osioon. Kuva vie neljä kolumnia ja tämä teksti kahdeksan! Alla on Footer, jossa on neljä kappaletta kolme kolumnia vieviä elementtejä. </p>
         </div>
         <div class="col-md-4 order-md-1">
             <img src="img/6-bootstrap.jpg" alt="Bootstrap code" class="img-fluid" width="500" height="500" >
-
-  
         </div>
       </div>
+      <hr class="featurette-divider">
+
+      <div class="row mb-2 mt-2">
+
+        <table class="table table-striped">
+            <thead>
+              <tr>
+                <th scope="col">Nimi</th>
+                <th scope="col">Mielipide Bootstrapilla tehdyistä sivuista</th>
+                <th scope="col">Mielipide ilman Bootstrappia tehdyistä sivuista</th>
+                <th scope="col">Lopullinen kanta</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Kirsi Kiireinen</th>
+                <td>Perushyvät sivut nopea rakentaa valmiista palasista ja CSS koodia ei tarvitse muokata paljoa</td>
+                <td>Minulla ei ole aikaa kirjoittaa kokonaan omaa koodia!</td>
+                <td>Bootstrapilla saan nopeasti hyvät sivut tehtyä!</td>
+              </tr>
+              <tr>
+                <th scope="row">Ykä Yksilöllinen</th>
+                <td>Kaikki Bootstrap sivut ovat ihan samanlaisia...</td>
+                <td>Omalla koodilla saan omannäköiset sivut!</td>
+                <td>Omalla koodilla, ilman Bootstrappia mennään!</td>
+              </tr>
+              <tr>
+                <th scope="row">Piia Portfoliosivu</th>
+                <td>Bootstrapilla en tuo osaamistani täysin esille! </td>
+                <td>Ilman Bootstrappia saan tuotua puhtaalla CSS:llä oman osaamiseni paremmin esille</td>
+                <td>Omalla koodilla tuon osaamiseni esiin!</td>
+              </tr>
+              <tr>
+                <th scope="row">Pete Perussiisti</th>
+                <td>Bootstrapilla saan luotua itselleni perussivut ilman turhempia kikkailuja</td>
+                <td>Toisaalta en voi hyödyntää kaikkia Bootstrapin runsaita ominaisuuksia</td>
+                <td>Molemmat ovat hyviä, en osaa päättää!</td>
+              </tr>
+              <tr>
+                <th scope="row">Minna Monimutkainensivu</th>
+                <td>Bootstrapilla saan helposti monimutkaisista elementeistäni responsiivisia ja skaalautuvia!</td>
+                <td>Omalla koodilla taas saan luotua monimutkaiset elementtini yksilöllisemmin!</td>
+                <td>Olen kahden vaiheilla, mutta kallistun Bootstrapin puoleen!</td>
+              </tr>
+            </tbody>
+          </table>
+
+
+        </div>
+
     </main>
-    <footer class="footer p-4 position-relative bottom-0 text-secondary" style="background-color: #111617;">
-        <div class="row text-center p-2">   <!-- 4x 3 wide -->
-            <div class="col-3 p-3"> 
-                <h4>Sivun tehnyt Aapeli Huhtinen</h4>
-                <p>Vähän vielä kesken</p>
+        <footer class="footer p-4 text-light mt-auto lh-lg" style="background-color: #111617;"> <!-- (line height large) -->
+       
+            <div class="row text-center p-2">  
+            <!-- 1. -->
+            <div class="col-6 col-lg-3 p-2 mb-3 order-lg-1"> 
+                <img src="img/6-logo.png" class="img-fluid" width="200" alt="Aapelin logo">
             </div>
-            <div class="col-3 p-3"> 
-                <h4>Laurea-ammattikorkeakoulu</h4>
-                <p class="fs-5">Verkkosivujen kehittäminen</p>
+            <!-- 2. -->
+            <div class="col-6 col-lg-3 p-2 mb-3 align-items-center order-lg-4"> 
+                <h4>Kiitos, kun vierailit sivuillani!</h4>
+                <svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-emoji-heart-eyes pt-3" viewBox="0 0 16 16">
+                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                    <path d="M11.315 10.014a.5.5 0 0 1 .548.736A4.498 4.498 0 0 1 7.965 13a4.498 4.498 0 0 1-3.898-2.25.5.5 0 0 1 .548-.736h.005l.017.005.067.015.252.055c.215.046.515.108.857.169.693.124 1.522.242 2.152.242.63 0 1.46-.118 2.152-.242a26.58 26.58 0 0 0 1.109-.224l.067-.015.017-.004.005-.002zM4.756 4.566c.763-1.424 4.02-.12.952 3.434-4.496-1.596-2.35-4.298-.952-3.434m6.488 0c1.398-.864 3.544 1.838-.952 3.434-3.067-3.554.19-4.858.952-3.434"/>
+                  </svg>
             </div>
-            <div class="col-3 p-3"> 
-                <h4>Tähän voisi laittaa vaikka sopivia linkkejä</h4>
-                <ul class="list-unstyled">
-                    <li>Link 1</li>
-                    <li>Link 2</li>
-                    <li>Link 3</li>
+            <!-- 3. -->
+            <div class="col-6 col-lg-3 p-2 mb-3 order-lg-2"> 
+                <h4>Yhteystiedot</h4>
+                <ul class="list-unstyled mt-5">
+                    <li>etunimi.sukunimi@student.laurea.fi</li>
+                    <li>+358 441234567</li>
                 </ul>
             </div>
-            <div class="col-3 p-3"> 
-                <h4>Tähän toisenlaisia linkkejä?</h4>
-                <ul class="list-unstyled">
-                    <li>Link 1</li>
-                    <li>Link 2</li>
-                    <li>Link 3</li>
+            <!-- 4.  -->
+            <div class="col-6 col-lg-3 p-2 mb-3 order-lg-3"> 
+                <h4>Linkkejä</h4>
+                <ul class="list-unstyled mt-5">
+                    <li>Etusivulle</li>
+                    <li>Takaisin palautussivulle</li>
+                    <li></li>
                 </ul>
-            
+
             </div>
+
         </div> 
     </footer>
     <!-- bootstrap JavaScript -->
