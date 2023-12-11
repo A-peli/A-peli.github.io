@@ -1,58 +1,58 @@
-:root {
-    --primary-color:#FF8133 !important;
-    --bs-primary-rgb: 17, 22, 23 !important;
-    --bs-secondary-rgb: 255, 129, 51 !important; 
-    --bs-body-bg: #EFE7DA !important;
-    --bs-body-font-family: 'Montserrat', sans-serif !important;
-    --bs-light: #EFE7DA !important;
+/* Colors:
+Musta: #111617
+Valk: #EFE7DA
+Oranssi: #FF8133
+Sininen: #3D52D5
+Oranssi ja sininen ei yhdessä
+*/
+
+html {
+    background-color: #111617;
 }
 
-a {
-    color:#FF8133 !important;
-}
-
-a:hover {
-    color: #EFE7DA !important;
-
-}
-
-a:hover .bi-arrow-right-circle {
-    fill:#EFE7DA;
-}
-
-.bi-x:hover {
-    fill: #EFE7DA !important;
-}
-
-.MenuIcon:hover {
-    fill:#EFE7DA;
-
-}
-
+/* header css */
 header {
-z-index: 2;
-
+    
+    padding: 30px 0 30px 0;
+}
+.LogoImg {
+    margin: 0px 0px 0px 50px; /* left margin same as .profile margin!! */
+}
+/* Start of main section CSS */
+.MainContainer {
+    display: flex;
+    
+}
+.Profile { /* Child of MainContainer also a flexbox) */
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    margin: 30px 0 20px 50px; /* left margin same as .LogoImg margin! */
+    width: 400px;
+    height: 80vh;
+    background-color: #EFE7DA;
+    color: #111617;
 }
 
-#navbar {
-    position: fixed;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    background: #111617;
-    z-index: 4;
-    color: #FF8133;
+.ProfileImg {
+    width: 400px;
+    height:400px;
 }
-
-.dropdown-nav__CloseNavBtn {
-position: absolute;
-top: 18px;
-right: 16px;
+p {
+    font-family: esteban;
+    line-height: 1.2;
 
 }
+h2 {
+    color:#FF8133;
+}
+article p {
+    color:#EFE7DA;
+}
+.Summary {
+    
+}
 
-.dropdown-nav__container {
-    height: 100vh;
-    padding: 0 1rem;
+.Experience {
+
 }

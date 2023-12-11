@@ -1,0 +1,57 @@
+:root {
+    --primary-color:#FF8133 !important;
+    --bs-primary-rgb: 17, 22, 23 !important;
+    --bs-secondary-rgb: 255, 129, 51 !important; 
+    --bs-body-bg: #EFE7DA !important;
+    --bs-body-font-family: 'Montserrat', sans-serif !important;
+    --bs-light: #EFE7DA !important;
+}
+
+a { /*  */
+    color:#FF8133 !important;
+}
+
+a:hover {
+    color: #EFE7DA !important;
+
+}
+
+a:hover .bi-arrow-right-circle {
+    fill:#EFE7DA;
+}
+
+.bi-x:hover {
+    fill: #EFE7DA !important;
+}
+
+.MenuIcon:hover {
+    fill:#EFE7DA;
+
+}
+
+header {
+z-index: 2;
+
+}
+
+#navbar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: #111617;
+    z-index: 4;
+    color: #FF8133;
+}
+
+.dropdown-nav__CloseNavBtn {
+position: absolute;
+top: 18px;
+right: 16px;
+
+}
+.dropdown-nav__container {
+    height: 100vh;
+    padding: 0 1rem;
+}
