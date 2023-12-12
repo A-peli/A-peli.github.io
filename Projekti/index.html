@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aapeli Landing page</title>
+    <title>Aapeli Huhtinen CV</title>
     <!-- tyylitiedosto ja fontit -->
     <link rel="stylesheet" href="/Projekti/css/tyylit.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,9 +11,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Esteban&family=Poppins:wght@500&display=swap" rel="stylesheet">
 </head>
 <body> 
-    <header>
+    <header id="1">
     <!--Logo-->
-    <a href="/" class="LogoImg"> <img src="img/6-logo.png" width="150" alt="Aapelin logo"></a>
+    <a href="/" id="1" class="LogoImg"> <img src="img/6-logo.png" width="150" alt="Aapelin logo"></a>
     </header>  
 <!-- start of main -->
 <main class="MainContainer"> <!-- flexbox (parent of ProfileContainer, Nav, and ArticleContainer) -->
@@ -23,42 +23,78 @@
         </div>
         <h2 class="Name">Aapeli <br> Huhtinen</h2>
         <p class="Titles">Isä, Opiskelija. Amatöörifribaaja.</p>
+        <button class="BSButton">Linkki Bootstrapsivulle</button>
     </section>
     <div>
         <ul class="Nav"> <!-- Child of MainContainer -->
-            <li>01 <strong>TOP</strong></li>
-            <li>02 <strong>AAPELI</strong></li>
-            <li>03 <strong>WORK EXPERIENCE</strong></li>
-            <li>04 <strong>EDUCATION</strong></li>
-            <li>05 <strong>OTHER</strong></li>
+            <li> <a href="#1">01 <strong>TOP</strong></a> </li>
+            <li> <a href="#2">02 <strong>AAPELI</strong></a></li>
+            <li> <a href="#3">03 <strong>EXPERIENCE</strong></a></li>
+            <li> <a href="#4">04 <strong>SKILLS</strong></a></li>
+            <li> <a href="#5">05 <strong>EDUCATION</strong></a></li>
+            <li> <a href="#6">06 <strong>PROJECTS</strong></a></li>
+            <li> <a href="#7">07 <strong>CONTACT</strong></a></li>
         </ul>
 
     </div>
-    <div class="ArticleContainer"> <!--   Child of MainContainer. Flexbox Parent of Summary, Experience -->
-        <article class="Summary"> <!-- Child  -->
+    <div class="ArticleContainer"> <!--   Child of MainContainer. Flexbox Parent of Summary, Experience... -->
+        <article class="Section" id="2"> <!-- Child  -->
             <h2>Kuka on Aapeli?</h2>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro aliquid obcaecati sapiente unde nesciunt, iure incidunt itaque maxime illo, accusamus dolor iste cum. Eum dignissimos laborum amet nam unde reprehenderit voluptatem vitae dicta! Expedita, corporis iure officia id perferendis necessitatibus dolorem temporibus ab sequi debitis dolores error repellendus? Iste dolores, delectus velit nesciunt consectetur incidunt sequi qui assumenda. Est velit asperiores expedita aperiam iste exercitationem. Sequi pariatur explicabo, impedit dignissimos, soluta sint quidem dicta nesciunt facilis ducimus, eius ullam eum!</p>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem minus quia voluptates enim quo illum labore ducimus, veritatis deleniti in nemo, ipsam voluptatibus eligendi quos, incidunt iste voluptate doloribus distinctio expedita error nulla? Ab porro ducimus optio quaerat, error cupiditate sint aperiam vitae incidunt vero amet, libero molestiae fugit in et quos deleniti hic commodi molestias excepturi soluta reprehenderit earum!</p>
-            <h3>Skills:</h3>
-            <ul class="Skills">
-                <li>Icon 1</li>
-                <li>Icon 2</li>
-                <li>Icon 3</li>
-
-
-            </ul>
+            <div class="NSContainerFirst">
+                <a href="#3">Next Section</a>
+            </div> 
         </article>
-        <article class="Experience"> <!-- Child -->
+        
+        <article class="Section" id="3"> <!-- Child -->
             <h2>Work Experience</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium quaerat voluptatum repudiandae sunt distinctio animi, eaque dolore saepe commodi molestiae.</p>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga ullam, sint voluptate repellat quae quo modi facilis sapiente id voluptatibus pariatur ipsa eaque, reprehenderit nesciunt distinctio non consequuntur eveniet? Qui.</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit id accusantium assumenda repellat animi nostrum tempora praesentium commodi, dicta aspernatur labore consequuntur tempore omnis voluptates nobis laborum repudiandae sequi? Corrupti, esse incidunt!</p>
+            <div class="NSContainer">
+                <a href="#4">Next Section</a>
+            </div> 
         </article>
-        <article class="Education"> <!-- Child -->
+        
+        <article class="Section" id="4"> <!-- Child -->
+            <h2>Skills</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium quaerat voluptatum repudiandae sunt distinctio animi, eaque dolore saepe commodi molestiae.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore eius blanditiis hic tenetur iste, ducimus cum odio, eligendi a expedita illo. Nam enim reprehenderit perferendis tenetur optio facere ex porro libero, doloremque hic dolores.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit ipsum quidem alias aliquam, nostrum minus voluptatibus blanditiis vero eum tenetur soluta!</p>
+            <div class="NSContainer">
+                <a href="#5">Next Section</a>
+            </div>
+        </article>
+        
+        <article class="Section" id="5"> <!-- Child -->
             <h2>Education</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium quaerat voluptatum repudiandae sunt distinctio animi, eaque dolore saepe commodi molestiae.</p>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore eius blanditiis hic tenetur iste, ducimus cum odio, eligendi a expedita illo. Nam enim reprehenderit perferendis tenetur optio facere ex porro libero, doloremque hic dolores.</p>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit ipsum quidem alias aliquam, nostrum minus voluptatibus blanditiis vero eum tenetur soluta!</p>
+            <div class="NSContainer">
+                <a href="#6">Next Section</a>
+            </div>
+        </article>
+        
+        <article class="Section"  id="6"> <!-- Child -->
+            <h2>Projects</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium quaerat voluptatum repudiandae sunt distinctio animi, eaque dolore saepe commodi molestiae.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore eius blanditiis hic tenetur iste, ducimus cum odio, eligendi a expedita illo. Nam enim reprehenderit perferendis tenetur optio facere ex porro libero, doloremque hic dolores.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit ipsum quidem alias aliquam, nostrum minus voluptatibus blanditiis vero eum tenetur soluta!</p>
+            <div class="NSContainer">
+                <a href="#7">Next Section</a>
+            </div>
+        </article>
+    
+        <article class="Section" id="7"> <!-- Child -->
+            <h2>Contact me!</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium quaerat voluptatum repudiandae sunt distinctio animi, eaque dolore saepe commodi molestiae.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore eius blanditiis hic tenetur iste, ducimus cum odio, eligendi a expedita illo. Nam enim reprehenderit perferendis tenetur optio facere ex porro libero, doloremque hic dolores.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit ipsum quidem alias aliquam, nostrum minus voluptatibus blanditiis vero eum tenetur soluta!</p>
+            <div class="NSContainer">
+                <a href="#1">Back to Top!</a>
+            </div>
         </article>
     </div>
 </main>

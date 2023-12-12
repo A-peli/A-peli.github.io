@@ -65,7 +65,16 @@ header {
     
     
 }
-
+.BSButton {
+    background-color:#3D52D5;
+    border: none;
+    color:#EFE7DA;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
 
 .ProfileContainer:hover .ProfileImg {
     transform: scale(1.7);
@@ -73,34 +82,21 @@ header {
 
 }
 
-p {
-    font-family: Esteban;
-    line-height: 1.2;
-
-}
-
-article p {
-    color:#EFE7DA;
-    font-size: 20px;
-}
-
 .ArticleContainer {
     display: flex;
     flex-direction: column;
-/*     height: 700px; */
-    margin: 10px 50px 20px 40px;
+    position: relative;
+    top: 0;
+    width: 40vw; 
+    margin: 10px 40px 20px 40px;
     padding: 0 30px 30px 20px;
     background-color:#111617;
-
+    color:#EFE7DA;
+    font-size: 24px;
+    font-family: Esteban;
+    line-height: 1.2;
     }
 
-.Summary  {
-    
-}
-
-.Experience {
-
-}
 h2 {
     color: #FF8133;
     font-family: Poppins;
@@ -117,9 +113,11 @@ h3 {
     font-size: 20px;
     width: 300px;
     line-height:2.5;
-    position: relative;
-    top: 9%;
+    position: fixed;
+    top: 20%;
+    left:80%;
     list-style-type: none;
+    text-decoration: none;
     color:#EFE7DA;
     text-shadow:
     0 0 5px #2335a8,
@@ -130,19 +128,120 @@ h3 {
     0 0 90px #3D52D5,
     0 0 100px #3D52D5,
     0 0 120px #3D52D5;
+
 }
 .Nav li:hover {
-    scale: 1.05;
     color: #3D52D5;
-    
+    scale:1.02;
+    transition: all 0.5s;
 }
-.Skills{
-    list-style-type: none;
+.Section {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    position: relative;
+
+
+}
+.NextSection{
+    font-family: Poppins;
+    font-size: 12px;
+
+}  
+a:link {
+    color:#EFE7DA;
+    text-decoration: none;
+
+}
+a:visited {
     color: #EFE7DA;
 }
-.Skills li {
-    float: left;
-    padding-left: 10px;
-    padding-right: 10px;
-    
+html {
+    scroll-behavior: smooth;
 }
+
+.NSContainer {
+    position:absolute;
+    bottom: 5%;
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: bold;
+    list-style-type: none;
+    text-decoration: none;
+    color:#EFE7DA;
+    text-shadow:
+    0 0 5px #2335a8,
+    0 0 10px #2335a8,
+    0 0 20px #2335a8,
+    0 0 40px #3D52D5,
+    0 0 80px #3D52D5,
+    0 0 90px #3D52D5,
+    0 0 100px #3D52D5,
+    0 0 120px #3D52D5;
+    line-height:2.5;
+    text-transform: uppercase;
+}
+.NSContainerFirst {
+    position:absolute;
+    bottom: 5%;
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: bold;
+    list-style-type: none;
+    text-decoration: none;
+    color:#EFE7DA;
+    text-shadow:
+    0 0 5px #2335a8,
+    0 0 10px #2335a8,
+    0 0 20px #2335a8,
+    0 0 40px #3D52D5,
+    0 0 80px #3D52D5,
+    0 0 90px #3D52D5,
+    0 0 100px #3D52D5,
+    0 0 120px #3D52D5;
+    line-height:2.5;
+    text-transform: uppercase;
+}
+@media only screen and (max-width: 1600px) {
+.ArticleContainer {
+    width: 30vw;
+    font-size: 20px;
+}
+}
+@media only screen and (max-width: 1250px) {
+    .MainContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+    body {
+        width: 100%;
+    }
+    .Nav {
+        right: 5%;
+        z-index: 1;
+    }
+    .ArticleContainer {
+        width: 400px;
+    }
+
+    }
+    @media only screen and (max-width: 1000px) {
+        .Nav {
+            display: none;
+        }
+        .MainContainer {
+            align-items: center;
+
+        }
+    }
+    @media only screen and (max-width: 600px) {
+        .Nav {
+            display: none;
+        }
+        .MainContainer {
+            align-items: center;
+
+        }
+    }
+    
+    
