@@ -7,34 +7,62 @@
     <!-- tyylitiedosto ja fontit -->
     <link rel="stylesheet" href="css/tyylit.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Esteban&family=Montserrat&display=swap" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Esteban&family=Poppins:wght@500&display=swap" rel="stylesheet">
 </head>
 <body> 
     <header>
     <!--Logo-->
-    <a href="/" class="LogoImg"> <img src="img/6-logo.png" width="200" alt="Aapelin logo"></a>
+    <a href="/" class="LogoImg"> <img src="img/6-logo.png" width="150" alt="Aapelin logo"></a>
     </header>  
 <!-- start of main -->
-<main class="MainContainer"> <!-- flexbox -->
-    <section class="Profile"> <!-- Profile section with picture and basic info -->
-        <img src="img/7-AapeliFriba_300x300.jpg" class="ProfileImg" alt="Aapelin kuva frisbeegolfaamassa">
-        <h2>Aapeli Huhtinen</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt cum omnis itaque porro natus doloribus placeat sint aliquid ipsum repellendus?</p>
+<main class="MainContainer"> <!-- flexbox (parent of ProfileContainer, Nav, and ArticleContainer) -->
+    <section class="ProfileContainer">
+        <div class="ProfileImgContainer"> <!-- Child of MainContainer -->
+        <img src="img/9-AapeliFribaa_square.png" class="ProfileImg" alt="Aapelin kuva frisbeegolfaamassa">
+        </div>
+        <h2 class="Name">Aapeli <br> Huhtinen</h2>
+        <p class="Titles">Isä, Opiskelija. Amatöörifribaaja.</p>
     </section>
-    <article class="Summary"> <!-- Child  -->
-        <h2>Tämä on otsikko H2! (summary)</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum amet veniam magni dolor animi inventore a sed error ipsum accusamus.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, voluptates.</p>
+    <div>
+        <ul class="Nav"> <!-- Child of MainContainer -->
+            <li>01 <strong>TOP</strong></li>
+            <li>02 <strong>AAPELI</strong></li>
+            <li>03 <strong>WORK EXPERIENCE</strong></li>
+            <li>04 <strong>EDUCATION</strong></li>
+            <li>05 <strong>OTHER</strong></li>
+        </ul>
 
 
-    </article>
-    <article class="Experience"> <!-- Child -->
-        <h2>Tämä on otsikko H2! (experience)</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium quaerat voluptatum repudiandae sunt distinctio animi, eaque dolore saepe commodi molestiae.</p>
 
-    </article>
+    </div>
+    <div class="ArticleContainer"> <!--   Child of MainContainer. Flexbox Parent of Summary, Experience -->
+        <article class="Summary"> <!-- Child  -->
+            <h2>Kuka on Aapeli?</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro aliquid obcaecati sapiente unde nesciunt, iure incidunt itaque maxime illo, accusamus dolor iste cum. Eum dignissimos laborum amet nam unde reprehenderit voluptatem vitae dicta! Expedita, corporis iure officia id perferendis necessitatibus dolorem temporibus ab sequi debitis dolores error repellendus? Iste dolores, delectus velit nesciunt consectetur incidunt sequi qui assumenda. Est velit asperiores expedita aperiam iste exercitationem. Sequi pariatur explicabo, impedit dignissimos, soluta sint quidem dicta nesciunt facilis ducimus, eius ullam eum!</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem minus quia voluptates enim quo illum labore ducimus, veritatis deleniti in nemo, ipsam voluptatibus eligendi quos, incidunt iste voluptate doloribus distinctio expedita error nulla? Ab porro ducimus optio quaerat, error cupiditate sint aperiam vitae incidunt vero amet, libero molestiae fugit in et quos deleniti hic commodi molestias excepturi soluta reprehenderit earum!</p>
+            <h3>Skills:</h3>
+            <ul class="Skills">
+                <li>Icon 1</li>
+                <li>Icon 2</li>
+                <li>Icon 3</li>
+
+
+            </ul>
+        </article>
+        <article class="Experience"> <!-- Child -->
+            <h2>Work Experience</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium quaerat voluptatum repudiandae sunt distinctio animi, eaque dolore saepe commodi molestiae.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga ullam, sint voluptate repellat quae quo modi facilis sapiente id voluptatibus pariatur ipsa eaque, reprehenderit nesciunt distinctio non consequuntur eveniet? Qui.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit id accusantium assumenda repellat animi nostrum tempora praesentium commodi, dicta aspernatur labore consequuntur tempore omnis voluptates nobis laborum repudiandae sequi? Corrupti, esse incidunt!</p>
+        </article>
+        <article class="Education"> <!-- Child -->
+            <h2>Education</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium quaerat voluptatum repudiandae sunt distinctio animi, eaque dolore saepe commodi molestiae.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore eius blanditiis hic tenetur iste, ducimus cum odio, eligendi a expedita illo. Nam enim reprehenderit perferendis tenetur optio facere ex porro libero, doloremque hic dolores.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit ipsum quidem alias aliquam, nostrum minus voluptatibus blanditiis vero eum tenetur soluta!</p>
+        </article>
+    </div>
 </main>
 </body>
 </html>
