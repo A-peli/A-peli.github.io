@@ -11,9 +11,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Esteban&family=Poppins:wght@500&display=swap" rel="stylesheet">
 </head>
 <body> 
-    <header id="1">
+    <header >
     <!--Logo-->
-    <a href="/" id="1" class="LogoImg"> <img src="img/6-logo.png" width="150" alt="Aapelin logo"></a>
+    <a href="/" > <img src="img/6-logo.png" class="LogoImg" width="150" alt="Aapelin logo"></a>
     </header>  
 <!-- start of main -->
 <main class="MainContainer"> <!-- flexbox (parent of ProfileContainer, Nav, and ArticleContainer) -->
@@ -23,80 +23,136 @@
         </div>
         <h2 class="Name">Aapeli <br> Huhtinen</h2>
         <p class="Titles">Isä, Opiskelija. Amatöörifribaaja.</p>
-        <button class="BSButton">Linkki Bootstrapsivulle</button>
+        <div>
+            <ul class="Nav"> <!-- Child of MainContainer -->
+                <li> <a href="#1">01 <strong>TOP OF PAGE</strong></a></li>
+                <li> <a href="#2">02 <strong>EXPERIENCE</strong></a></li>
+                <li> <a href="#3">03 <strong>SKILLS</strong></a></li>
+                <li> <a href="#4">04 <strong>EDUCATION</strong></a></li>
+                <li> <a href="#5">05 <strong>PROJECTS</strong></a></li>
+                <li> <a href="#6">06 <strong>CONTACT</strong></a></li>
+            </ul>
+            <ul class="Links">
+                <li>Projektin Bootstrap -sivu</li>
+                <li>Aapelin palautussivu</li>
+            </ul>
+        </div>
     </section>
-    <div>
-        <ul class="Nav"> <!-- Child of MainContainer -->
-            <li> <a href="#1">01 <strong>TOP</strong></a> </li>
-            <li> <a href="#2">02 <strong>AAPELI</strong></a></li>
-            <li> <a href="#3">03 <strong>EXPERIENCE</strong></a></li>
-            <li> <a href="#4">04 <strong>SKILLS</strong></a></li>
-            <li> <a href="#5">05 <strong>EDUCATION</strong></a></li>
-            <li> <a href="#6">06 <strong>PROJECTS</strong></a></li>
-            <li> <a href="#7">07 <strong>CONTACT</strong></a></li>
-        </ul>
 
-    </div>
     <div class="ArticleContainer"> <!--   Child of MainContainer. Flexbox Parent of Summary, Experience... -->
-        <article class="Section" id="2"> <!-- Child  -->
-            <h2>Kuka on Aapeli?</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro aliquid obcaecati sapiente unde nesciunt, iure incidunt itaque maxime illo, accusamus dolor iste cum. Eum dignissimos laborum amet nam unde reprehenderit voluptatem vitae dicta! Expedita, corporis iure officia id perferendis necessitatibus dolorem temporibus ab sequi debitis dolores error repellendus? Iste dolores, delectus velit nesciunt consectetur incidunt sequi qui assumenda. Est velit asperiores expedita aperiam iste exercitationem. Sequi pariatur explicabo, impedit dignissimos, soluta sint quidem dicta nesciunt facilis ducimus, eius ullam eum!</p>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem minus quia voluptates enim quo illum labore ducimus, veritatis deleniti in nemo, ipsam voluptatibus eligendi quos, incidunt iste voluptate doloribus distinctio expedita error nulla? Ab porro ducimus optio quaerat, error cupiditate sint aperiam vitae incidunt vero amet, libero molestiae fugit in et quos deleniti hic commodi molestias excepturi soluta reprehenderit earum!</p>
-            <div class="NSContainerFirst">
-                <a href="#3">Next Section</a>
-            </div> 
-        </article>
-        
-        <article class="Section" id="3"> <!-- Child -->
-            <h2>Work Experience</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium quaerat voluptatum repudiandae sunt distinctio animi, eaque dolore saepe commodi molestiae.</p>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga ullam, sint voluptate repellat quae quo modi facilis sapiente id voluptatibus pariatur ipsa eaque, reprehenderit nesciunt distinctio non consequuntur eveniet? Qui.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit id accusantium assumenda repellat animi nostrum tempora praesentium commodi, dicta aspernatur labore consequuntur tempore omnis voluptates nobis laborum repudiandae sequi? Corrupti, esse incidunt!</p>
-            <div class="NSContainer">
-                <a href="#4">Next Section</a>
-            </div> 
-        </article>
-        
-        <article class="Section" id="4"> <!-- Child -->
-            <h2>Skills</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium quaerat voluptatum repudiandae sunt distinctio animi, eaque dolore saepe commodi molestiae.</p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore eius blanditiis hic tenetur iste, ducimus cum odio, eligendi a expedita illo. Nam enim reprehenderit perferendis tenetur optio facere ex porro libero, doloremque hic dolores.</p>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit ipsum quidem alias aliquam, nostrum minus voluptatibus blanditiis vero eum tenetur soluta!</p>
-            <div class="NSContainer">
-                <a href="#5">Next Section</a>
+        <article class="Section1" id="1">
+            <div class="ArticleWrapper">
+                <h2>Kuka on Aapeli?</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro aliquid obcaecati sapiente unde nesciunt, iure incidunt itaque maxime illo, accusamus dolor iste cum. Eum dignissimos laborum amet nam unde reprehenderit voluptatem vitae dicta! Expedita, corporis iure officia id perferendis necessitatibus dolorem temporibus ab sequi debitis dolores error repellendus? Iste dolores, delectus velit nesciunt consectetur incidunt sequi qui assumenda. Est velit asperiores expedita aperiam iste exercitationem. Sequi pariatur explicabo, impedit dignissimos, soluta sint quidem dicta nesciunt facilis ducimus, eius ullam eum!</p>
+                <h3>Tällä sivulla käytetyt uudet tekniikat:</h3>
+                <ol>
+                    <li>tekniikka</li>
+                    <li>tekniikka</li>
+                    <li>tekniikka</li>
+                    <li>tekniikka</li>
+
+                </ol>
+                <div class="NSContainer">
+                    <a href="#2">Next Section</a>
+                </div> 
             </div>
+            <div>
+                <img src="/Projekti/img/10-toimisto.jpg" class="imgtest" alt="">
+            </div> 
         </article>
         
-        <article class="Section" id="5"> <!-- Child -->
-            <h2>Education</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium quaerat voluptatum repudiandae sunt distinctio animi, eaque dolore saepe commodi molestiae.</p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore eius blanditiis hic tenetur iste, ducimus cum odio, eligendi a expedita illo. Nam enim reprehenderit perferendis tenetur optio facere ex porro libero, doloremque hic dolores.</p>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit ipsum quidem alias aliquam, nostrum minus voluptatibus blanditiis vero eum tenetur soluta!</p>
+        <article class="Section2" id="2"> <!-- Child -->
+            <div class="ArticleWrapper">
+                <h2>Work Experience</h2>
+                <h3>Work place 1</h3>
+                <em>10/2020-11/2022</em>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium quaerat voluptatum repudiandae sunt distinctio animi, eaque dolore saepe commodi molestiae.</p>
+                <h3>Work place 2</h3>
+                <em>05/2018- 10/2020</em>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga ullam, sint voluptate repellat quae quo modi facilis sapiente id voluptatibus pariatur ipsa eaque, reprehenderit nesciunt distinctio non consequuntur eveniet? Qui.</p>
+                <div class="NSContainer">
+                    <a href="#3">Next Section</a>
+                </div>
+            </div>
+            <div>
+                <img src="/Projekti/img/11-toimisto.jpg" class="imgtest" alt="">
+            </div>  
+        </article>
+        
+        <article class="Section3" id="3"> <!-- Child -->
+            <div class="ArticleWrapper">
+                <h2>Skills</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium quaerat voluptatum repudiandae sunt distinctio animi, eaque dolore saepe commodi molestiae.</p>
+            <div class="IconWrapper" >
+                <div class="Icons" >
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="80" height="80" viewBox="0 0 50 50">
+                    <path d="M9,7l3,34l14,4l14-4c1-11.33,2-22.67,3-34H9z M33.76,35l-7.77,2l-7.76-2l-0.39-5h3.86l0.18,2L26,32.62L30.17,32l0.41-5	H17.59l0.96-12H34l0.7,6H31l-0.23-2h-8.36l-0.32,4h12.66L33.76,35z"></path>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="80" height="80" viewBox="0 0 50 50">
+                        <path fill-rule="evenodd" d="M 42 6 L 39 40 L 25 44 L 11 40 L 8 6 Z M 16.800781 28 L 20.800781 28 L 20.898438 30.5 L 25 31.898438 L 29.101563 30.5 L 29.398438 26 L 20.601563 26 L 20.398438 22 L 29.601563 22 L 29.898438 18 L 16.101563 18 L 15.800781 14 L 34.101563 14 L 33.601563 22 L 32.898438 33.5 L 25 36.101563 L 17.101563 33.5 Z"></path>
+                    </svg>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="80" height="80" viewBox="0 0 50 50">
+                        <path d="M 28.1875 -0.00390625 C 30.9375 6.359375 18.320313 10.289063 17.152344 15.59375 C 16.074219 20.460938 24.640625 26.121094 24.644531 26.121094 C 23.34375 24.105469 22.402344 22.441406 21.097656 19.304688 C 18.890625 14 34.53125 9.203125 28.1875 -0.00390625 Z M 36.550781 8.8125 C 36.550781 8.8125 25.503906 9.511719 24.941406 16.582031 C 24.691406 19.730469 27.84375 21.410156 27.9375 23.703125 C 28.007813 25.570313 26.050781 27.128906 26.050781 27.128906 C 26.050781 27.128906 29.601563 26.460938 30.714844 23.605469 C 31.945313 20.4375 28.328125 18.273438 28.691406 15.738281 C 29.042969 13.3125 36.550781 8.8125 36.550781 8.8125 Z M 39.230469 25.144531 C 38.074219 25.09375 36.789063 25.476563 35.625 26.3125 C 37.90625 25.824219 39.835938 27.21875 39.835938 28.828125 C 39.835938 32.453125 34.597656 35.878906 34.597656 35.878906 C 34.597656 35.878906 42.707031 34.953125 42.707031 29 C 42.707031 26.539063 41.152344 25.234375 39.230469 25.144531 Z M 19.183594 25.152344 C 19.183594 25.152344 9.0625 25.015625 9.0625 27.878906 C 9.0625 30.871094 22.316406 31.082031 31.78125 29.238281 C 31.78125 29.238281 34.308594 27.507813 34.980469 26.863281 C 28.777344 28.128906 14.621094 28.296875 14.621094 27.203125 C 14.621094 26.191406 19.183594 25.152344 19.183594 25.152344 Z M 16.738281 30.722656 C 15.1875 30.722656 12.871094 31.921875 12.871094 33.078125 C 12.871094 35.402344 24.5625 37.195313 33.21875 33.796875 L 30.222656 31.960938 C 24.355469 33.839844 13.539063 33.238281 16.738281 30.722656 Z M 18.179688 35.921875 C 16.050781 35.921875 14.671875 37.234375 14.671875 38.203125 C 14.671875 41.1875 27.378906 41.488281 32.414063 38.453125 L 29.214844 36.417969 C 25.453125 38.007813 16.007813 38.222656 18.179688 35.921875 Z M 11.089844 38.625 C 7.621094 38.554688 5.367188 40.113281 5.367188 41.40625 C 5.363281 48.28125 40.890625 47.949219 40.890625 40.921875 C 40.890625 39.757813 39.515625 39.203125 39.019531 38.9375 C 41.921875 45.65625 9.96875 45.136719 9.96875 41.171875 C 9.96875 40.269531 12.3125 39.382813 14.492188 39.808594 L 12.644531 38.757813 C 12.101563 38.675781 11.582031 38.632813 11.089844 38.625 Z M 44.636719 43.25 C 39.234375 48.367188 25.546875 50.234375 11.78125 47.074219 C 25.542969 52.703125 44.566406 49.535156 44.636719 43.25 Z"></path>
+                    </svg>
+                    </div>
+                </div>
+
+                <div class="NSContainer">
+                    <a href="#4">Next Section</a>
+                </div>
+            </div>
+            <div>
+                <img src="/Projekti/img/12-toimisto.jpg" class="imgtest" alt="">
+            </div> 
+        </article>
+        <article class="Section4" id="4"> <!-- Child -->
+            <div class="ArticleWrapper">
+                <h2>Education</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium quaerat voluptatum repudiandae sunt distinctio animi, eaque dolore saepe commodi molestiae.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore eius blanditiis hic tenetur iste, ducimus cum odio, eligendi a expedita illo. Nam enim reprehenderit perferendis tenetur optio facere ex porro libero, doloremque hic dolores.</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit ipsum quidem alias aliquam, nostrum minus voluptatibus blanditiis vero eum tenetur soluta!</p>
+                <div class="NSContainer">
+                    <a href="#5">Next Section</a>
+                </div>
+            </div>
+            <div>
+                <img src="/Projekti/img/13-toimisto.jpg" class="imgtest" alt="">
+            </div> 
+        </article>
+        
+        <article class="Section5"  id="5"> <!-- Child -->
+            <div class="ArticleWrapper">
+                <h2>Projects</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium quaerat voluptatum repudiandae sunt distinctio animi, eaque dolore saepe commodi molestiae.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore eius blanditiis hic tenetur iste, ducimus cum odio, eligendi a expedita illo. Nam enim reprehenderit perferendis tenetur optio facere ex porro libero, doloremque hic dolores.</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit ipsum quidem alias aliquam, nostrum minus voluptatibus blanditiis vero eum tenetur soluta!</p>            
             <div class="NSContainer">
                 <a href="#6">Next Section</a>
             </div>
-        </article>
-        
-        <article class="Section"  id="6"> <!-- Child -->
-            <h2>Projects</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium quaerat voluptatum repudiandae sunt distinctio animi, eaque dolore saepe commodi molestiae.</p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore eius blanditiis hic tenetur iste, ducimus cum odio, eligendi a expedita illo. Nam enim reprehenderit perferendis tenetur optio facere ex porro libero, doloremque hic dolores.</p>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit ipsum quidem alias aliquam, nostrum minus voluptatibus blanditiis vero eum tenetur soluta!</p>
-            <div class="NSContainer">
-                <a href="#7">Next Section</a>
             </div>
+            <div>
+                <img src="/Projekti/img/14-toimisto.jpg" class="imgtest" alt="">
+            </div> 
         </article>
-    
-        <article class="Section" id="7"> <!-- Child -->
-            <h2>Contact me!</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium quaerat voluptatum repudiandae sunt distinctio animi, eaque dolore saepe commodi molestiae.</p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore eius blanditiis hic tenetur iste, ducimus cum odio, eligendi a expedita illo. Nam enim reprehenderit perferendis tenetur optio facere ex porro libero, doloremque hic dolores.</p>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit ipsum quidem alias aliquam, nostrum minus voluptatibus blanditiis vero eum tenetur soluta!</p>
-            <div class="NSContainer">
+        <article class="Section6" id="6"> <!-- Child -->
+            <div class="ArticleWrapper">
+                <h2>Contact me!</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium quaerat voluptatum repudiandae sunt distinctio animi, eaque dolore saepe commodi molestiae.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore eius blanditiis hic tenetur iste, ducimus cum odio, eligendi a expedita illo. Nam enim reprehenderit perferendis tenetur optio facere ex porro libero, doloremque hic dolores.</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit ipsum quidem alias aliquam, nostrum minus voluptatibus blanditiis vero eum tenetur soluta!</p>
+                <div class="NSContainer">
                 <a href="#1">Back to Top!</a>
+                </div>
             </div>
+            <div>
+                <img src="/Projekti/img/15-toimisto.jpg" class="imgtest" alt="">
+            </div> 
         </article>
     </div>
 </main>
+<footer>
+    <p>Website HTML and CSS by Aapeli H.</p>
+</footer>
 </body>
 </html>
