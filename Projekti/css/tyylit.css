@@ -3,7 +3,6 @@ Musta: #111617
 Valk: #EFE7DA
 Oranssi: #FF8133
 Sininen: #3D52D5
-Oranssi ja sininen ei yhdessä
 */
 
 html {
@@ -56,6 +55,7 @@ header {
     display: flex;
     position: fixed;
     left: 0;
+    top: 100px;
     flex-direction: column;
     padding: 0 30px 0 30px;
     margin: 0px 0px 20px 0px; /* left margin same as .LogoImg margin! */
@@ -109,11 +109,10 @@ header {
     position: relative;
     padding: 0 200px 0 200px;
     z-index: 5;
-
-
-    
-    
-
+}
+.Tekniikat {
+    font-size: 12px;
+    font-family: Poppins;
 }
 
 h2 {
@@ -145,6 +144,7 @@ h3 {
     list-style-type: none;
     display: block;
     margin-top: 20px;
+    margin-bottom: 20px;
     padding: 0;
     width: 100%;
 
@@ -162,32 +162,6 @@ h3 {
 }
 
 
-/* THIS IS OLD DELETE LATER!!!! */
-/* .NavOLD { 
-    font-family: Poppins;
-    font-size: 20px;
-    width: 300px;
-    line-height:2.5;
-    top: 20%;
-    left:80%;
-    list-style-type: none;
-    text-decoration: none;
-    color:#EFE7DA;
-    text-shadow:
-    0 0 5px #2335a8,
-    0 0 10px #2335a8,
-    0 0 20px #2335a8,
-    0 0 40px #3D52D5,
-    0 0 80px #3D52D5,
-    0 0 90px #3D52D5,
-    0 0 100px #3D52D5,
-    0 0 120px #3D52D5;
-
-} */
-/* .NavOLD li:hover {
-    color: #3D52D5;
-    scale:1.02;
-    transition: all 0.5s; } */
 
 .Section1, .Section2, .Section3,.Section4,.Section5,.Section6,.Section7,.Section8 {
     display: flex;
@@ -234,88 +208,28 @@ html {
 .NSContainer {
     margin-top: 80px;
 }
-
-
-/* .NSContainer {
-    position:absolute;
-    bottom: 5%;
-    font-family: Poppins;
-    font-size: 20px;
-    font-weight: bold;
-    list-style-type: none;
-    text-decoration: none;
-    color:#EFE7DA;
-    text-shadow:
-    0 0 5px #2335a8,
-    0 0 10px #2335a8,
-    0 0 20px #2335a8,
-    0 0 40px #3D52D5,
-    0 0 80px #3D52D5,
-    0 0 90px #3D52D5,
-    0 0 100px #3D52D5,
-    0 0 120px #3D52D5;
-    line-height:2.5;
+.btn {
+    background-image: linear-gradient(to right, #FF8133 0%, #3D52D5  51%, #FF8133  100%); /* Uusi tekniikka */
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
     text-transform: uppercase;
-}
-.NSContainerFirst {
-    position:absolute;
-    bottom: 5%;
+    transition: 0.7s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #acb3e2;
+    border-radius: 10px;
+    display: block;
     font-family: Poppins;
-    font-size: 20px;
-    font-weight: bold;
-    list-style-type: none;
+  }
+
+  .btn:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
     text-decoration: none;
-    color:#EFE7DA;
-    text-shadow:
-    0 0 5px #2335a8,
-    0 0 10px #2335a8,
-    0 0 20px #2335a8,
-    0 0 40px #3D52D5,
-    0 0 80px #3D52D5,
-    0 0 90px #3D52D5,
-    0 0 100px #3D52D5,
-    0 0 120px #3D52D5;
-    line-height:2.5;
-    text-transform: uppercase;
-} */
+    box-shadow: 0 0 20px #e0c3b1;
+  }
 
-/* .Section2 {
-    background-color: brown;
-    background-image: url(/Projekti/img/10-toimisto.jpg);
-    background-size: cover;
-    z-index: 2;
-}
-.Section3 {
-    background-color: beige;
-    background-image: url(/Projekti/img/11-toimisto.jpg);
-    background-size: cover;
-    
-}
-.Section4 {
-    background-color: rgba(0, 0, 0, 0.4);
-    background-image: url(/Projekti/img/12-toimisto.jpg);
-    background-size: cover;
-   
-    
-}
-.Section5 {
-    background-color: green;
-    background-image: url(/Projekti/img/13-toimisto.jpg);
-    background-size: cover;
-    
-}
-.Section6 {
-    background-color: yellow;
-    background-image: url(/Projekti/img/10-toimisto.jpg);
-    background-size: cover;
-
-}
-.Section7 {
-    background-color: black;
-    background-image: url(/Projekti/img/12-toimisto.jpg);
-    background-size: cover;
-    
-} */
 
 .imgtest {
 /*     width: 100%;
@@ -324,7 +238,7 @@ html {
     width:100%;
     height: 100vh;
     object-fit: cover;
-    opacity: 0.4;
+    opacity: 0.3;
     position:absolute;
     top:0;
     z-index:1;
@@ -332,12 +246,16 @@ html {
 }
 footer {
     position: fixed;
-    width: 300px;
-    bottom: 0;
+    display: block;
     padding: 0 30px 0 30px;
+    bottom: 0;
+    right: 0;
+    color:#EFE7DA;
+    opacity: 0.5;
+    z-index: 9;
 }
 
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1450px) {
 
     .Section1, .Section2, .Section3,.Section4,.Section5,.Section6,.Section7,.Section8 {
 
@@ -388,7 +306,40 @@ footer {
     .IconWrapper {
         margin: 0px; 
 }
-    svg {
-
-    }
 }
+
+@media only screen and (max-height: 825px) {
+    .ProfileContainer{
+        scale: 0.8;
+        top: 20px;
+        margin-bottom: 0;
+    }
+    .LogoImg {
+        scale: 0.8; 
+    }
+    .NSContainer {
+        margin-top:30px;
+    }
+
+}
+@media only screen and (max-height: 750px) {
+
+    .Name {
+        font-size: 2.5rem;
+        margin-top:10px;
+    }
+    
+}
+    @media only screen and (max-height: 700px) {
+        .ProfileImg {
+            height:150px;
+            width: 150px;
+        }
+        .ProfileContainer {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        .Titles {
+            font-size:14px;
+        }
+    }
