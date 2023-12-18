@@ -1,0 +1,101 @@
+/* Colors:
+Musta: #111617
+Valk: #EFE7DA
+Oranssi: #FF8133
+Sininen: #3D52D5
+*/
+
+/* 
+header {
+    height: 30vh;
+} */
+:root {
+    --primary-color:#FF8133 !important;
+    --bs-dark: #111617;
+    --bs-primary-rgb: 17, 22, 23 !important;
+    --bs-secondary-rgb: 255, 129, 51 !important; 
+    --bs-light: #EFE7DA !important;
+    --bs-body-bg:var(--bs-dark);
+    --bs-body-color:var(--bs-light);
+    --bs-body-font-family: Esteban;
+}
+main {
+    color:var(--bs-light);
+}
+
+small {
+font-family: Poppins;
+
+}
+
+h2, h3 {
+    color: #FF8133;
+    font-family: Poppins;
+}
+
+
+a { /*  */
+    color:#FF8133 !important;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #EFE7DA !important;
+
+}
+
+a:hover .bi-arrow-right-circle {
+    fill:#EFE7DA;
+}
+
+.bi-x:hover {
+    fill: #EFE7DA !important;
+}
+
+.MenuIcon {
+    fill: #3D52D5;
+}
+
+.MenuIcon:hover {
+    fill:#EFE7DA;
+
+}
+
+header {
+z-index: 2;
+
+}
+
+#navbar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: #111617;
+    z-index: 4;
+    color: #FF8133;
+}
+
+.dropdown-nav__CloseNavBtn {
+position: absolute;
+top: 18px;
+right: 16px;
+
+}
+.dropdown-nav__container {
+    height: 100vh;
+    padding: 0 1rem;
+}
+
+.list-group-item {
+    background-color: #3D52D5;
+    color:#EFE7DA;
+    font-family: Poppins;
+    border-radius: 0!important;
+    border: #111617 solid 1px;
+}
+
+
+
+  
